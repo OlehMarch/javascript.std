@@ -1,0 +1,2 @@
+# javascript.std
+JavaScript basics
