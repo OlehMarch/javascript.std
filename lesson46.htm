@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Методы setTimeout(); setInterval(); clearInterval() обьекта WINDOW
+
+function forLesson () {
+    alert("Test");
+}
+
+setTimeout(forLesson, 3000);    // (1,2); 1 - указание действия; 2 - время через которое нужно выполнить действие, указывается в милисекундах;
+
+var idInt = setInterval(forLesson, 3000);
+clearInterval(idInt);
+
+</script>
+</div>
+</body>
+</html>

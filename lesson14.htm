@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+// Метод SPLICE
+var students = ["Жуковская Елена", "Кишинская Анна", "Сафронова Анастасия", "Воробьева Анна"];
+students.splice(2,2);    //удаление со 2го элемента массива 2х элементов, т.е. 2го и 3го элемента
+
+students.splice(1,0, "Виноградова Юлия", "Самойленко Елена");   //добавление после 1го элемента два элемента
+
+students.splice(2,1, "Ерченко Валерия");    //удаление 2го элемента с его заменой на указаный элемент
+document.write(students);
+
+</script>
+</div>
+</body>
+</html>

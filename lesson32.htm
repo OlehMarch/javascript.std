@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Свойства и методы обьекта string
+//charAt & charCodeAt
+
+var city = "Днепропетровск";
+document.write("Третья буква: <strong>" + city.charAt(2) + "</strong>, а ее код - " + city.charCodeAt(2) + ". <br \>");
+
+var name = "ЛеHа";
+
+/*
+var rusLetters = "аяАЯ";
+document.write(rusLetters.charCodeAt(0) + "<br \>");
+document.write(rusLetters.charCodeAt(1) + "<br \>");
+document.write(rusLetters.charCodeAt(2) + "<br \>");
+document.write(rusLetters.charCodeAt(3) + "<br \>");
+                    1040 - 1103
+*/
+
+for (var i = 0; i < name.length ; i++) {
+	if (name.charCodeAt(i) < 1040 || name.charCodeAt(i) > 1103) {
+        document.write("Найден символ, который не входит в диапазон русских букв. Это символ: <strong>" + name.charAt(i) + "</strong><br \>");
+    }
+}
+
+</script>
+</div>
+</body>
+</html>

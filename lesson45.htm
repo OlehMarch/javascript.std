@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//обьект Date
+
+var now = new Date();
+document.write(now.getTime() + "<br />");  // показывает сколько прошло времени в милисекундах с 1го января 1970 года
+
+var from1970 = now.getTime() / (3600000 * 24);  // количество прошедших дней с 1го января 1970 года
+document.write(Math.round(from1970) + "<br />");
+
+var ny2014 = new Date(2014,0,1,0,0,0);       //год, месяц(начало с нуля), день, час, минута, секунда, также можно добавлять и милисекунды
+var from1970toNy2014 = ny2014.getTime() / (3600000 * 24);
+document.write("До нового года осталось: " + (Math.round(from1970toNy2014) - Math.round(from1970)) + "<br />");
+var myDays = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Субота"];
+document.write("Это будет день недели: " + myDays[ny2014.getDay()] + "<br />");
+
+var test = new Date(3600000 * 24);
+document.write(test);
+
+</script>
+</div>
+</body>
+</html>

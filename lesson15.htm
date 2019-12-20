@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+// Метод REVERSE
+var students = ["Жуковская Елена", "Кишинская Анна", "Сафронова Анастасия", "Воробьева Анна"];
+//document.write(students.reverse());
+
+// Метод SORT
+var students = ["Жуковская Елена", "Кишинская Анна", "Сафронова Анастасия", "Воробьева Анна"];
+//document.write(students.sort());
+
+// Метод JOIN
+var students = ["Жуковская Елена", "Кишинская Анна", "Сафронова Анастасия", "Воробьева Анна"];
+//document.write(students.join(", "));
+
+// Метод CONCAT (конкатонации)
+var students = ["Жуковская Елена", "Кишинская Анна", "Сафронова Анастасия", "Воробьева Анна"];
+var students2 = ["Рудвольга Юлия", "Виноградова Юлия"];
+//document.write(students.concat(students2));
+
+// Метод SLICE
+var students = ["Жуковская Елена", "Кишинская Анна", "Сафронова Анастасия", "Воробьева Анна"];
+var luckyStudents = students.slice(1,3)    //выборка элементов из массива (без изменений изначального массива) в новый с 1го элемента по 3й не включая его, т.е. всего лишь 1й и 2й элементы
+document.write("Будут убиратся по дому: " + luckyStudents.join(", "));
+
+</script>
+</div>
+</body>
+</html>

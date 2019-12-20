@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Свойства и методы обьекта string
+//search
+
+var city = "Я живу в Днепропетровске";
+var regV1 = /живу/;                                // регулярное выражение
+document.write(city.search(regV1) + "<br \>");
+                                                  // "$" - значит что после шаблона больше текста не должно быть
+var index = "49018";                              // "^" - значит что совпадение долно начинатся только с начала строки
+var regV2 = /^\d{5}$/;                            // "\d" - значит задать поисковику поиск цифры от 0 до 9
+document.write(index.search(regV2) + "<br \>");   // "{5}" - значит что надо искать ровно 5ть цифр подряд
+
+
+</script>
+</div>
+</body>
+</html>

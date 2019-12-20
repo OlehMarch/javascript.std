@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Свойства и методы обьекта string
+//match
+
+var peoples = "Иванов Иван Иванович тел. 8(495)120-10-87 г.Москва; Петров петр Петрович тел. 8(495)234-62-11 г.Москва; Сидоров Сидр Сидорович тел. 8(347)211-99-63 г.Уфа;";
+var regV = /8\(495\)\d{3}-\d{2}-\d{2}/g;
+var result = peoples.match(regV);
+document.write(result);
+
+</script>
+</div>
+</body>
+</html>

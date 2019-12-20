@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//обьект Date
+
+var myDate = new Date;
+var year = myDate.getFullYear();
+var month = myDate.getMonth() + 1;                   //так как ведет отсчет месяцев с нуля
+var day = myDate.getDate();
+var dayWeek0 = myDate.getDay();
+var hour = myDate.getHours();
+var minutes = myDate.getMinutes();
+var seconds = myDate.getSeconds();
+var milliseconds = myDate.getMilliseconds();
+
+var dayWeek1 = parseInt(dayWeek0) + 1;               //начинаю отсчет недели не с 0 а с 1
+
+document.write("Сейчас " + year + " год, " + month + " месяц, " + day + " число, и " + dayWeek1 + " день недели начиная с воскресенья. <br />");
+document.write("Текущее время: " + hour + ":" + minutes + ":" + seconds + ":" + milliseconds);
+
+</script>
+</div>
+</body>
+</html>

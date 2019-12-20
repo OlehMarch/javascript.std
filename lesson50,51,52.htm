@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//созданите собственного обьекта
+
+var car = new Object();
+car.color = "White";
+car.maxSpeed = 220;
+car.brand = "Nissan";
+
+var moto = {
+    color: "Black",
+    maxSpeed: 300,
+    brand: "Yamaha"
+}
+
+document.write("Our car have this color: " + car.color);
+document.write("<br >Our motobike made by brand: " + moto.brand + "<br />");
+
+var test = "color";
+document.write(moto[test] + "<br />");
+
+var summerTour = {
+    turkey: 250,
+    spain: 600,
+    france: 350
+};
+
+var option;
+
+for (option in summerTour) {
+    document.write(option + ' : ' + summerTour[option] + "<br />");
+}
+
+summerTour.calc = function (people, days, country) {
+    var result = people * days * this[country];
+    return result;
+};
+
+var countPeople = prompt("Введите кол-во людей отправляющихся в путешествие");
+var countDays = prompt("Введите кол-во дней путешествия");document.write();
+var countryOfTour = prompt("Введите страну в которую хотели бы отправится: Турция(turkey), Испания(spain), Франция(france). В поле для ввода введите текст из скобок!");
+
+document.write("Стоимость поездки составит: " + summerTour.calc(countPeople,countDays,countryOfTour) + " гривен.");
+
+</script>
+</div>
+</body>
+</html>

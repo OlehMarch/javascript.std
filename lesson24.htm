@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//методы обьекта WINDOW
+
+/*
+var newWin = window.open("","Новое окно","width=400, height=300");
+newWin.document.write("вывод инфы в новое окно");
+window.document.write("Вывод");
+*/
+
+//window.alert("Я модальное окно!");
+
+/*
+var age = prompt("How old are you?","Your age:");
+alert("Your age: " + age);
+*/
+
+var answer = confirm("Вы согласны ехать с нами в путишествие?");
+if (answer) {
+    document.write("Ура! Мы едем вместе!");
+}
+else {
+    document.write("Ок, поедем вместе в следующий раз!");
+}
+
+</script>
+</div>
+</body>
+</html>

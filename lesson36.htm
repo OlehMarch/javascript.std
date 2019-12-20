@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+<title>Курс по Javascript</title>
+</head>
+<body>
+<div>
+<script type="text/javascript">
+//Свойства и методы обьекта string
+
+var testStr = "www.disc.mysite.ru, https://www.my-super-4an.ru, http://my-super-4an.ru, Biggssite.RU";
+var regV = /(https?:\/\/)?(www\.)?[a-z0-9-\.]{2,1000}\.ru/gi;
+var result = testStr.match(regV);
+for (var i = 0; i < result.length ; i++) {
+	document.write(result[i] + "<br \>");
+}
+
+</script>
+</div>
+</body>
+</html>
